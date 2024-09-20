@@ -1,5 +1,4 @@
-Global Styles
-* {
+Global Styles * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -32,8 +31,10 @@ body {
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
-  display: flex; /* Use flexbox to align items */
-  align-items: center; /* Vertically center the content */
+  display: flex;
+  /* Use flexbox to align items */
+  align-items: center;
+  /* Vertically center the content */
   gap: 10px;
 }
 
@@ -41,16 +42,30 @@ body {
   background-color: #f0f0f0;
 }
 
+
+
 .display-form {
+  position: absolute;
+  /* Or 'fixed' if you want it to stay in place during scrolling */
+  top: 70px;
+  /* Adjust this to position it just below the display button */
+  left: 10px;
+  /* This places the form near the left corner of the screen */
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 1rem;
-  margin-top: 0.5rem;
+  width: 300px;
+  /* Define a fixed width for the form */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Adds shadow to give it a popup effect */
+  z-index: 1000;
+  /* Ensure the form appears above other content */
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
 
 .display-form label {
   font-weight: bold;
@@ -216,11 +231,25 @@ body {
   margin-right: 4px;
 }
 
-.priority-0::before { background-color: #c4c4c4; }
-.priority-1::before { background-color: #4a90e2; }
-.priority-2::before { background-color: #f9d648; }
-.priority-3::before { background-color: #f88f24; }
-.priority-4::before { background-color: #e44d42; }
+.priority-0::before {
+  background-color: #c4c4c4;
+}
+
+.priority-1::before {
+  background-color: #4a90e2;
+}
+
+.priority-2::before {
+  background-color: #f9d648;
+}
+
+.priority-3::before {
+  background-color: #f88f24;
+}
+
+.priority-4::before {
+  background-color: #e44d42;
+}
 
 .tag {
   background-color: #f4f5f8;

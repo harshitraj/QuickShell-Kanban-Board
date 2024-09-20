@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import '../App.css';
 
@@ -14,10 +15,10 @@ function Header({ onDisplayChange }) {
 
   return (
     <header className="header">
-     
-    
+
+
       <button onClick={() => setIsOpen(!isOpen)} className="display-button">
-      <img
+        <img
           src="/photo/Display.svg"
           alt="Before Display Icon"
           className="icon-before"
